@@ -6,8 +6,9 @@ import Footer from "../components/Footer";
 export const App = () => {
   return (
     <div id="webcrumbs">
+      <Header></Header>
       <div className="w-full min-h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-100 p-8 font-sans">
-        <Header></Header>
+        
         <main className="relative z-10 h-full">
           <div className="mb-6">
             <div className="flex items-center space-x-4 mb-4"></div>

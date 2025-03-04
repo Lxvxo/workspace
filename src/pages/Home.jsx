@@ -2,14 +2,332 @@ import React from "react";
 import "../styles/styles.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import black_robot from "../assets/home/black_robot.png";
+import asleep_robot from "../assets/home/asleep_robot.png";
+import community_robot from "../assets/home/community_robot.png";
+
 
 export const App = () => {
   return (
     <div id="webcrumbs">
+       <Header></Header>
       <div className="w-full min-h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-100 p-8 font-sans">
-        <Header></Header>
         <section className="max-w-7xl mx-auto space-y-6">
           {/* Hero Section */}
+          <div className='flex flex-col md:flex-row w-full gap-10 p-8 h-[600px] overflow-hidden'>
+    <div className='w-full md:w-1/2 relative group'>
+      <div className='absolute w-full h-full bg-gradient-to-br from-blue-400/30 to-purple-500/40 rounded-[70%_30%_70%_30%/30%_60%_40%_70%] animate-[morphLeft_15s_ease-in-out_infinite_alternate] backdrop-blur-sm shadow-xl hover:shadow-2xl hover:from-blue-400/50 hover:to-purple-500/60 transition-all duration-700 group-hover:scale-[1.03] group-hover:rotate-1'></div>
+      <div className='absolute w-[90%] h-[80%] top-[10%] left-[5%] bg-white/60 backdrop-blur-md rounded-[60%_40%_60%_40%/30%_70%_30%_70%] animate-[morphLeftInner_20s_ease-in-out_infinite_alternate] p-8 flex flex-col justify-center transform transition-all duration-700 group-hover:scale-105 group-hover:-rotate-1'>
+        <h2 className='text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 tracking-tight leading-tight'>
+          Learn how AI works
+        </h2>
+        <div className='flex gap-4 mt-6 mr-6 justify-center'>
+          <button className='px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-800 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-blue-500/40 flex items-center justify-center gap-2 group/btn'>
+            <span>Sign in</span>
+            <span className='material-symbols-outlined transform group-hover/btn:translate-x-1 transition-transform'>
+              arrow_forward
+            </span>
+          </button>
+          <button className='px-8 py-3 bg-white/80 backdrop-blur-sm border border-blue-200 text-gray-700 font-semibold rounded-xl hover:bg-white transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-indigo-200/50 flex items-center justify-center gap-2'>
+            <span className='material-symbols-outlined'>login</span>
+            <span>Login</span>
+          </button>
+        </div>
+
+        <div className='flex justify-start w-full'>
+          <div className='flex justify-end'></div>
+        </div>
+        <div className='absolute -bottom-8 -right-8 w-36 h-36 bg-white rounded-full blur-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-80 hover:shadow-lg'></div>
+        <div className='absolute -top-4 -left-4 w-24 h-24 bg-blue-400/30 rounded-full blur-2xl animate-pulse delay-700'></div>
+      </div>
+    </div>
+
+    <div className='absolute bottom-6 left-6 right-6 bg-white/80 backdrop-blur-md p-4 rounded-xl shadow-lg transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500'>
+      <h3 className='text-xl font-bold text-indigo-800'>
+        Discover AI's Potential
+      </h3>
+      <p className='text-gray-700 text-sm'>
+        Explore the cutting-edge world of neural networks
+      </p>
+    </div>
+    <div className='w-full md:w-1/2 relative group'>
+      <div className='absolute w-full h-full bg-gradient-to-bl from-indigo-400/30 to-blue-500/40 rounded-[30%_70%_70%_30%/50%_40%_60%_50%] animate-[morphRight_18s_ease-in-out_infinite_alternate] backdrop-blur-sm shadow-xl hover:shadow-2xl hover:from-indigo-400/50 hover:to-blue-500/60 transition-all duration-700 group-hover:scale-[1.03] group-hover:-rotate-1'></div>
+      <div className='absolute w-[85%] h-[85%] top-[7.5%] left-[7.5%] bg-white/50 backdrop-blur-md rounded-[40%_60%_50%_50%/40%_50%_50%_60%] animate-[morphRightInner_22s_ease-in-out_infinite_alternate] p-8 flex items-center justify-center transform transition-all duration-700 group-hover:scale-105 group-hover:rotate-1 overflow-hidden'>
+        <div className='relative group overflow-hidden'>
+          <img
+            src={black_robot}
+            alt='Neural Network Visualization'
+            className='object-cover w-full h-full rounded-[30%_60%_40%_50%/40%_40%_60%_50%] shadow-lg transform transition-all duration-500 group-hover:scale-110 group-hover:rounded-[40%_50%_50%_40%/50%_40%_50%_40%] hover:shadow-xl filter saturate-[1.2] contrast-[1.1]'
+          />
+          <div className='absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-indigo-600 text-white px-4 py-2 rounded-full top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-md whitespace-nowrap font-medium'>
+            Try AI Lab
+          </div>
+        </div>
+        <div className='relative inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 mix-blend-overlay rounded-[40%_60%_50%_50%/40%_50%_50%_60%] group-hover:opacity-80 transition-opacity duration-500 z-50'></div>
+
+        <div className='absolute -bottom-5 -left-5 w-36 h-36 bg-blue-400/30 rounded-full blur-3xl animate-pulse'></div>
+        <div className='absolute -top-10 -right-10 w-32 h-32 bg-purple-400/30 rounded-full blur-2xl animate-pulse delay-1000'></div>
+      </div>
+    </div>
+  </div>
+
+  <style jsx>{`
+    @keyframes morphLeft {
+      0% { border-radius: 70% 30% 70% 30% / 30% 60% 40% 70%; }
+      25% { border-radius: 60% 40% 60% 40% / 40% 50% 50% 60%; }
+      50% { border-radius: 50% 50% 50% 50% / 50% 40% 60% 50%; }
+      75% { border-radius: 40% 60% 40% 60% / 60% 30% 70% 40%; }
+      100% { border-radius: 30% 70% 30% 70% / 70% 20% 80% 30%; }
+    }
+    @keyframes morphLeftInner {
+      0% { border-radius: 60% 40% 60% 40% / 30% 70% 30% 70%; }
+      25% { border-radius: 50% 50% 50% 50% / 40% 60% 40% 60%; }
+      50% { border-radius: 40% 60% 40% 60% / 50% 50% 50% 50%; }
+      75% { border-radius: 30% 70% 30% 70% / 60% 40% 60% 40%; }
+      100% { border-radius: 20% 80% 20% 80% / 70% 30% 70% 30%; }
+    }
+    @keyframes morphRight {
+      0% { border-radius: 30% 70% 70% 30% / 50% 40% 60% 50%; }
+      25% { border-radius: 40% 60% 60% 40% / 40% 50% 50% 60%; }
+      50% { border-radius: 50% 50% 50% 50% / 30% 60% 40% 70%; }
+      75% { border-radius: 60% 40% 40% 60% / 40% 70% 30% 60%; }
+      100% { border-radius: 70% 30% 30% 70% / 60% 80% 20% 40%; }
+    }
+    @keyframes morphRightInner {
+      0% { border-radius: 40% 60% 50% 50% / 40% 50% 50% 60%; }
+      25% { border-radius: 50% 50% 40% 60% / 50% 40% 60% 50%; }
+      50% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+      75% { border-radius: 70% 30% 20% 80% / 70% 20% 80% 30%; }
+      100% { border-radius: 80% 20% 10% 90% / 80% 10% 90% 20%; }
+    }
+  `}</style>
+
+<div className='flex flex-col md:flex-row w-full gap-10 p-8 h-[600px] overflow-hidden'>
+    <div className='w-full md:w-1/2 relative group'>
+      <div className='absolute w-full h-full bg-gradient-to-bl from-indigo-400/30 to-blue-500/40 rounded-[30%_70%_70%_30%/50%_40%_60%_50%] animate-[morphRight_18s_ease-in-out_infinite_alternate] backdrop-blur-sm shadow-xl hover:shadow-2xl hover:from-indigo-400/50 hover:to-blue-500/60 transition-all duration-700 group-hover:scale-[1.03] group-hover:-rotate-1'></div>
+      <div className='absolute w-[85%] h-[85%] top-[7.5%] left-[7.5%] bg-white/50 backdrop-blur-md rounded-[40%_60%_50%_50%/40%_50%_50%_60%] animate-[morphRightInner_22s_ease-in-out_infinite_alternate] p-8 flex items-center justify-center transform transition-all duration-700 group-hover:scale-105 group-hover:rotate-1 overflow-hidden'>
+        <div className='relative group overflow-hidden'>
+          <img
+src={asleep_robot}
+alt='Neural Network Visualization'
+            className='object-cover w-full h-full rounded-[30%_60%_40%_50%/40%_40%_60%_50%] shadow-lg transform transition-all duration-500 group-hover:scale-110 group-hover:rounded-[40%_50%_50%_40%/50%_40%_50%_40%] hover:shadow-xl filter saturate-[1.2] contrast-[1.1]'
+          />
+          <div className='absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-indigo-600 text-white px-4 py-2 rounded-full top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-md whitespace-nowrap font-medium'>
+            Explore AI Technology
+          </div>
+        </div>
+        <div className='relative inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 mix-blend-overlay rounded-[40%_60%_50%_50%/40%_50%_50%_60%] group-hover:opacity-80 transition-opacity duration-500 z-50'></div>
+
+        <div className='absolute -bottom-5 -left-5 w-36 h-36 bg-blue-400/30 rounded-full blur-3xl animate-pulse'></div>
+        <div className='absolute -top-10 -right-10 w-32 h-32 bg-purple-400/30 rounded-full blur-2xl animate-pulse delay-1000'></div>
+      </div>
+    </div>
+
+    <div className='absolute bottom-6 left-6 right-6 bg-white/80 backdrop-blur-md p-4 rounded-xl shadow-lg transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500'>
+      <h3 className='text-xl font-bold text-purple-800'>
+        Experience AI Evolution
+      </h3>
+      <p className='text-gray-700 text-sm'>
+        Unlock the fascinating world of machine learning algorithms
+      </p>
+    </div>
+
+    <div className='w-full md:w-1/2 relative group'>
+      <div className='absolute w-full h-full bg-gradient-to-br from-purple-500/40 to-blue-400/30 rounded-[70%_30%_70%_30%/30%_60%_40%_70%] animate-[morphLeft_15s_ease-in-out_infinite_alternate] backdrop-blur-sm shadow-xl hover:shadow-2xl hover:from-purple-500/60 hover:to-blue-400/50 transition-all duration-700 group-hover:scale-[1.03] group-hover:rotate-1'></div>
+      <div className='absolute w-[90%] h-[80%] top-[10%] left-[5%] bg-white/60 backdrop-blur-md rounded-[60%_40%_60%_40%/30%_70%_30%_70%] animate-[morphLeftInner_20s_ease-in-out_infinite_alternate] p-8 flex flex-col justify-center transform transition-all duration-700 group-hover:scale-105 group-hover:-rotate-1'>
+        <h2 className='text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-600 tracking-tight leading-tight'>
+          Discover neural networks
+        </h2>
+        <div className='flex gap-4 mt-6 mr-6 justify-center'>
+          <button className='px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-700 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-indigo-800 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/40 flex items-center justify-center gap-2 group/btn'>
+            <span>Get started</span>
+            <span className='material-symbols-outlined transform group-hover/btn:translate-x-1 transition-transform'>
+              arrow_forward
+            </span>
+          </button>
+          <button className='px-8 py-3 bg-white/80 backdrop-blur-sm border border-purple-200 text-gray-700 font-semibold rounded-xl hover:bg-white transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-purple-200/50 flex items-center justify-center gap-2'>
+            <span className='material-symbols-outlined'>explore</span>
+            <span>Tour</span>
+          </button>
+        </div>
+
+        <div className='flex justify-start w-full'>
+          <div className='flex justify-end'></div>
+        </div>
+        <div className='absolute -bottom-8 -right-8 w-36 h-36 bg-white rounded-full blur-3xl transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-80 hover:shadow-lg'></div>
+        <div className='absolute -top-4 -left-4 w-24 h-24 bg-purple-400/30 rounded-full blur-2xl animate-pulse delay-700'></div>
+      </div>
+    </div>
+  </div>
+
+  <style jsx>{`
+    @keyframes morphLeft {
+      0% { border-radius: 70% 30% 70% 30% / 30% 60% 40% 70%; }
+      25% { border-radius: 60% 40% 60% 40% / 40% 50% 50% 60%; }
+      50% { border-radius: 50% 50% 50% 50% / 50% 40% 60% 50%; }
+      75% { border-radius: 40% 60% 40% 60% / 60% 30% 70% 40%; }
+      100% { border-radius: 30% 70% 30% 70% / 70% 20% 80% 30%; }
+    }
+    @keyframes morphLeftInner {
+      0% { border-radius: 60% 40% 60% 40% / 30% 70% 30% 70%; }
+      25% { border-radius: 50% 50% 50% 50% / 40% 60% 40% 60%; }
+      50% { border-radius: 40% 60% 40% 60% / 50% 50% 50% 50%; }
+      75% { border-radius: 30% 70% 30% 70% / 60% 40% 60% 40%; }
+      100% { border-radius: 20% 80% 20% 80% / 70% 30% 70% 30%; }
+    }
+    @keyframes morphRight {
+      0% { border-radius: 30% 70% 70% 30% / 50% 40% 60% 50%; }
+      25% { border-radius: 40% 60% 60% 40% / 40% 50% 50% 60%; }
+      50% { border-radius: 50% 50% 50% 50% / 30% 60% 40% 70%; }
+      75% { border-radius: 60% 40% 40% 60% / 40% 70% 30% 60%; }
+      100% { border-radius: 70% 30% 30% 70% / 60% 80% 20% 40%; }
+    }
+    @keyframes morphRightInner {
+      0% { border-radius: 40% 60% 50% 50% / 40% 50% 50% 60%; }
+      25% { border-radius: 50% 50% 40% 60% / 50% 40% 60% 50%; }
+      50% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+      75% { border-radius: 70% 30% 20% 80% / 70% 20% 80% 30%; }
+      100% { border-radius: 80% 20% 10% 90% / 80% 10% 90% 20%; }
+    }
+  `}</style>
+  <div className='relative w-full h-[500px] mb-12 overflow-hidden group'>
+    <div className='absolute w-full h-full bg-gradient-to-br from-indigo-400/20 to-purple-500/30 rounded-[40px] backdrop-blur-sm shadow-xl hover:shadow-2xl hover:from-indigo-400/40 hover:to-purple-500/50 transition-all duration-700 group-hover:scale-[1.01] overflow-hidden'>
+      <div className='absolute inset-0 overflow-hidden'>
+        <img
+          src={community_robot}
+          alt='AI Technology Showcase'
+          className='object-cover w-full h-full opacity-90 scale-110 group-hover:scale-105 transition-transform duration-1000 ease-in-out'
+        />
+        <div className='absolute inset-0 bg-gradient-to-r from-indigo-900/70 to-purple-900/60 mix-blend-multiply'></div>
+      </div>
+
+      <div className='absolute inset-0 flex items-center justify-between px-16 z-10'>
+        <div className='max-w-2xl'>
+          <div className='mb-2 inline-flex px-3 py-1 rounded-full bg-indigo-400/30 backdrop-blur-md text-white text-xs font-medium tracking-wider uppercase'>
+            Join the AI Revolution
+          </div>
+          <h2 className='text-5xl font-extrabold text-white mb-4 tracking-tight leading-tight'>
+            Become Part of Our{" "}
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300'>
+              Neural Community
+            </span>
+          </h2>
+          <p className='text-lg text-blue-100 mb-8 max-w-xl'>
+            Connect with like-minded AI enthusiasts, share your projects, learn
+            from experts, and explore the fascinating world of neural networks
+            together.
+          </p>
+          <div className='flex gap-4'>
+            <button className='px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-indigo-600/40 flex items-center justify-center gap-2 group/btn'>
+              <span>Join Community</span>
+              <span className='material-symbols-outlined transform group-hover/btn:translate-x-1 transition-transform'>
+                arrow_forward
+              </span>
+            </button>
+            <button className='px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-purple-600/20 flex items-center justify-center gap-2'>
+              <span className='material-symbols-outlined'>play_circle</span>
+              <span>Watch Demo</span>
+            </button>
+          </div>
+        </div>
+
+        <div className='bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 transform hover:scale-105 w-80'>
+          <h3 className='text-xl font-bold text-white mb-4'>
+            Community Highlights
+          </h3>
+
+          <div className='space-y-4'>
+            <div className='flex items-center gap-3 p-3 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 cursor-pointer'>
+              <div className='w-12 h-12 rounded-full bg-indigo-500/30 flex items-center justify-center flex-shrink-0'>
+                <span className='material-symbols-outlined text-white'>
+                  groups
+                </span>
+              </div>
+              <div>
+                <h4 className='text-white font-medium'>50,000+ Members</h4>
+                <p className='text-blue-100 text-sm'>
+                  From 120+ countries worldwide
+                </p>
+              </div>
+            </div>
+
+            <div className='flex items-center gap-3 p-3 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 cursor-pointer'>
+              <div className='w-12 h-12 rounded-full bg-purple-500/30 flex items-center justify-center flex-shrink-0'>
+                <span className='material-symbols-outlined text-white'>
+                  event
+                </span>
+              </div>
+              <div>
+                <h4 className='text-white font-medium'>Weekly Events</h4>
+                <p className='text-blue-100 text-sm'>
+                  Workshops, hackathons & more
+                </p>
+              </div>
+            </div>
+
+            <div className='flex items-center gap-3 p-3 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 cursor-pointer'>
+              <div className='w-12 h-12 rounded-full bg-blue-500/30 flex items-center justify-center flex-shrink-0'>
+                <span className='material-symbols-outlined text-white'>
+                  school
+                </span>
+              </div>
+              <div>
+                <h4 className='text-white font-medium'>Learning Resources</h4>
+                <p className='text-blue-100 text-sm'>
+                  1,200+ tutorials and courses
+                </p>
+              </div>
+            </div>
+
+            <a
+              href='#'
+              className='block text-center text-blue-200 hover:text-white text-sm font-medium mt-2 hover:underline transition-all duration-300'
+            >
+              View all community benefits →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className='absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-indigo-900/30 to-transparent'></div>
+      <div className='absolute -bottom-8 -left-8 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl animate-pulse'></div>
+      <div className='absolute -top-12 -right-12 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl animate-pulse delay-1000'></div>
+    </div>
+  </div>
+
+  <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12'></div>
+
+  <style jsx>{`
+    @keyframes morphLeft {
+      0% { border-radius: 70% 30% 70% 30% / 30% 60% 40% 70%; }
+      25% { border-radius: 60% 40% 60% 40% / 40% 50% 50% 60%; }
+      50% { border-radius: 50% 50% 50% 50% / 50% 40% 60% 50%; }
+      75% { border-radius: 40% 60% 40% 60% / 60% 30% 70% 40%; }
+      100% { border-radius: 30% 70% 30% 70% / 70% 20% 80% 30%; }
+    }
+    @keyframes morphLeftInner {
+      0% { border-radius: 60% 40% 60% 40% / 30% 70% 30% 70%; }
+      25% { border-radius: 50% 50% 50% 50% / 40% 60% 40% 60%; }
+      50% { border-radius: 40% 60% 40% 60% / 50% 50% 50% 50%; }
+      75% { border-radius: 30% 70% 30% 70% / 60% 40% 60% 40%; }
+      100% { border-radius: 20% 80% 20% 80% / 70% 30% 70% 30%; }
+    }
+    @keyframes morphRight {
+      0% { border-radius: 30% 70% 70% 30% / 50% 40% 60% 50%; }
+      25% { border-radius: 40% 60% 60% 40% / 40% 50% 50% 60%; }
+      50% { border-radius: 50% 50% 50% 50% / 30% 60% 40% 70%; }
+      75% { border-radius: 60% 40% 40% 60% / 40% 70% 30% 60%; }
+      100% { border-radius: 70% 30% 30% 70% / 60% 80% 20% 40%; }
+    }
+    @keyframes morphRightInner {
+      0% { border-radius: 40% 60% 50% 50% / 40% 50% 50% 60%; }
+      25% { border-radius: 50% 50% 40% 60% / 50% 40% 60% 50%; }
+      50% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+      75% { border-radius: 70% 30% 20% 80% / 70% 20% 80% 30%; }
+      100% { border-radius: 80% 20% 10% 90% / 80% 10% 90% 20%; }
+    }
+  `}</style>
+
           <div className="bg-white/70 backdrop-blur-md rounded-2xl p-6 shadow-lg shadow-indigo-100/30 mb-8">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-1">

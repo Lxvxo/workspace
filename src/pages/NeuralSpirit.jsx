@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export const App = () => {
   return (
     <div id="webcrumbs">
-      <div className="w-full min-h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-100 p-4 md:p-8 font-sans">
+      <div className="w-screen h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-100 p-4 md:p-8 font-sans">
         <main className="flex bg-slate-50 rounded-2xl overflow-hidden shadow-xl">
           <div className="w-[280px] bg-white border-r border-gray-200 shadow-md flex flex-col transition-all duration-300 transform hover:shadow-xl">
             <div className="p-4 flex items-center justify-between border-b border-gray-100">

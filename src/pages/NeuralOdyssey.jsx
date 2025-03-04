@@ -13,8 +13,9 @@ import exemple from "../assets/courses/exemple.png";
 export const App = () => {
   return (
     <div id="webcrumbs">
+       <Header></Header>
       <div className="w-full min-h-screen bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-100 p-8 font-sans">
-        <Header></Header>
+       
         <main className="flex flex-col">
           {/* Course Grid Section */}
           <section className="mb-8 mt-8 max-w-7xl mx-auto">

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center mb-8 bg-white/70 backdrop-blur-md rounded-2xl p-4 shadow-lg shadow-indigo-100/30 relative z-50">
+    <header className='flex justify-between items-center px-8 py-4 bg-white/70 backdrop-blur-md shadow-lg shadow-indigo-100/30 sticky top-0 z-50'>
       {" "}
       <div className="flex items-center">
         <h1 className="text-3xl font-bold relative overflow-hidden group">
@@ -44,12 +44,12 @@ const Header = () => {
           Neural Odyssey
         </Link>
 
-        <a
-          href="#"
+        <Link
+          to="/AI_lab"
           className="hover:text-blue-600 transition-colors duration-200 hover:border-b-2 hover:border-blue-500"
         >
           AI Lab
-        </a>
+        </Link>
         <div className="relative group">
           <a
             href="#"

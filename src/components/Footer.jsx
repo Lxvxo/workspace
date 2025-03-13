@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500">
           <div className="flex items-center space-x-1.5 mb-1.5 md:mb-0">
             <span className="text-[9px] bg-blue-100/50 px-1.5 py-0.5 rounded-full text-blue-700 hover:bg-blue-100 transition-colors cursor-pointer">
-              v0.9.2 Beta
+              v0.1.1 Beta
             </span>
             <span className="hidden md:inline">•</span>
             <a
@@ -142,7 +142,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center text-[8px] text-gray-400 mt-1.5 opacity-60 hover:opacity-100 transition-opacity duration-300">
-          HeaveNeural © 2023 • The Neural Revolution • All data is ephemeral and
+          HeaveNeural © 2025 • The Neural Revolution • All data is ephemeral and
           experimental
         </div>
       </div>

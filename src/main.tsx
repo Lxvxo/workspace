@@ -6,7 +6,8 @@ import NeuralOdyssey from "./pages/NeuralOdyssey";
 import NeuralSpirit from "./pages/NeuralSpirit";
 import Community from "./pages/Community";
 import AI_Lab from "./pages/AI_Lab";
-import poursi from "pages/course_page_example";
+import Course from "./pages/example";
+import Challenges from "./pages/Challenges";
 
 const rootElement = document.getElementById("root");
 
@@ -22,7 +23,8 @@ if (rootElement) {
           <Route path="/neural-spirit" element={<NeuralSpirit />} />
           <Route path="/community" element={<Community />} />
           <Route path="/AI_lab" element={<AI_Lab />} />
-          <Route path="/page" element={<poursi />} />
+          <Route path="/page" element={<Course />} />
+          <Route path="/challenges" element={<Challenges />} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

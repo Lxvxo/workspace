@@ -32,7 +32,7 @@ export const App = () => {
                     <span className="material-symbols-outlined mr-3 text-white/80 group-hover:text-white group-hover:rotate-12 transition-all duration-300">
                       smart_toy
                     </span>
-                    <span className="font-medium">Neural Spirit 3.0</span>
+                    <span className="font-medium">Neural Spirit 1.0</span>
                   </div>
                   <span className="px-2 py-0.5 bg-white/20 rounded-full text-xs">
                     Active
@@ -165,7 +165,7 @@ export const App = () => {
                       <span className="material-symbols-outlined text-sm mr-1 text-indigo-500">
                         tune
                       </span>
-                      Neural Spirit 3.0
+                      Neural Spirit 1.0
                       <span className="material-symbols-outlined text-sm ml-1">
                         expand_more
                       </span>
@@ -206,7 +206,7 @@ export const App = () => {
                       </div>
                     </div>
                     <div className="bg-indigo-50 p-2 rounded-md text-xs text-gray-700">
-                      Knowledge cut-off: June 2023
+                      Knowledge cut-off: to define
                     </div>
                   </div>
                 </details>
@@ -228,9 +228,7 @@ export const App = () => {
                   </div>
                   <div className="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm hover:shadow-md transition-all">
                     <p className="text-gray-700 text-xs">
-                      Hello! I'm Neural Spirit, your AI assistant. How can I
-                      help you today? I can answer questions, generate creative
-                      content, help with problem-solving, and much more!
+                      Hello! I'm Neural Spirit, your AI assistant. I am currently in implementation. I'm coming soon !
                     </p>
                   </div>
                 </div>
@@ -238,7 +236,7 @@ export const App = () => {
                 <div className="flex items-start gap-4 max-w-3xl mx-auto justify-end">
                   <div className="bg-indigo-50 rounded-2xl rounded-tr-none p-4 shadow-sm hover:shadow-md transition-all">
                     <p className="text-gray-700 text-xs">
-                      Can you explain how neural networks work in simple terms?
+                      ...
                     </p>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 shadow-sm flex-shrink-0 hover:scale-110 transition-transform">
@@ -360,8 +358,8 @@ export const App = () => {
                   <div className="flex items-center justify-between mt-2 px-1 text-[10px] text-gray-500">
                     <div className="flex items-center gap-3">
                       <div className="flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
-                        Neural Spirit is ready
+                        <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+                        Neural Spirit is not ready
                       </div>
                       <div className="h-3 w-px bg-gray-200"></div>
                       <div className="flex items-center gap-1">
